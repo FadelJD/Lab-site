@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(k(t^ydt9@=n41$dy+fxael2+1n_h*ea=k+s3kzb9i#8bk#(0&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://lab-site-98x2.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['lab-site-98x2.onrender.com', '127.0.0.1', 'localhost', 'www.localhost']
 
 
 # Application definition
@@ -95,11 +95,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mysqltutorial',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST': '127.0.0.1',
-        'PORT': 3306,
+        'NAME': 'MYBLOG',
+        'USER': 'admin',
+        'PASSWORD': 'NewAWS32',
+        'HOST': 'my-mysql-db.c1800sswy12x.ap-southeast-2.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
@@ -140,8 +140,8 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
-SECURE_BROWSER_XSS_FILTER = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_SSL_REDIRECT = True  # If HTTPS is enforced
+CSRF_COOKIE_SECURE = False  # Do not enforce secure CSRF cookies
+SESSION_COOKIE_SECURE = False  # Do not enforce secure session cookies
+SECURE_BROWSER_XSS_FILTER = False  # Disable the XSS protection that enforces HTTPS
+SECURE_CONTENT_TYPE_NOSNIFF = False  # Disable the HTTPS-only header for MIME types
+SECURE_SSL_REDIRECT = False  # Do not redirect HTTP to HTTPS
