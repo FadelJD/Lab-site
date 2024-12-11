@@ -19,18 +19,23 @@ def syll(request):
 def people(request):
     #people_data = People.objects.first()
     return render(request, 'lab/new3.html')
+def contact(request):
+    return render(request, 'lab/new4.html')
+def facility(request):
+    return render(request, 'lab/new5_facility.html')
+
+
+
+
+def test(request):
+    return render(request, 'lab/test.html')
+
+def detail(request):
+    return render(request, 'lab/detail.html')
 def appointment(request):
     return render(request, 'lab/appointment.html')
 def blog(request):
     return render(request, 'lab/blog.html')
-def contact(request):
-    return render(request, 'lab/new4.html')
-def detail(request):
-    return render(request, 'lab/detail.html')
-def facility(request):
-    return render(request, 'lab/new5_facility.html')
-def test(request):
-    return render(request, 'lab/test.html')
 
 class IndexView(generic.ListView):
     template_name = 'lab/indexlove.html'
