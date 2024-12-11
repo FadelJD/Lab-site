@@ -9,9 +9,6 @@ venv/
 # Ignore database
 db.sqlite3
 
-# Ignore staticfiles directory (auto-generated)
-staticfiles/
-
 # Ignore media/uploads (optional, unless required in the repo)
 media/
 

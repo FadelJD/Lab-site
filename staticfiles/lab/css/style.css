@@ -1,0 +1,1033 @@
+/********** Template CSS **********/
+:root {
+    --primary: #13C5DD;
+    --secondary: #354F8E;
+    --light: #EFF5F9;
+    --dark: #1D2A4D;
+}
+/*
+my code
+*/
+
+.topbar {
+    background-color: #13C5DD;
+    max-height: 30px;
+}
+
+.topbar-left {
+    font-size: 15px;
+    position: relative;
+    bottom: 11px;
+}
+
+.hero-header {
+    background: url(../images/9.jpg);
+    background-size: cover;
+    height: 600px;
+  }
+
+.hero-slider {
+    position: relative;
+    bottom: 59px;
+    width:100%;
+    height: 600px;
+}
+
+.hero-slider img {
+width: 100%;
+height: x;
+object-fit: cover;
+position: relative;
+
+z-index: 1;
+}
+
+.about-container {
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+position: relative;
+right: 5%;
+padding: 30px;
+width: 35%;
+height: 700px;
+}
+
+.about-container .link a {
+    font-size: 20px;
+    font-family: 'Source Sans 3';
+    color: #ff6e30;
+}
+
+.about-container .link a:hover {
+    text-decoration: underline;
+}
+
+h3.text-primary {
+    font-size: 30px;
+    font-family: 'Source Sans 3';
+    color: black !important;
+    font-weight: bold;
+}
+
+h2.text-primary {
+    font-size: 40px;
+    font-family: 'Source Sans 3';
+    color: black !important;
+    font-weight: bold;
+
+}
+
+.research-container {
+    padding: 35px;
+    width: 60%;
+    height: 700px;
+    padding-right: 1em;
+}
+
+.research-container .link a {
+    font-size: 20px;
+    font-family: 'Source Sans 3';
+    color: #ff6e30;
+
+}
+
+.research-container .link a:hover {
+    text-decoration: underline;
+}
+
+
+
+.events-container {
+    position: relative;
+    left: 20%;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 40%;
+    height: 700px;
+}
+
+.events-container .link a {
+    font-size: 20px;
+    font-family: 'Source Sans 3';
+    color: #ff6e30;
+}
+
+.events-container .link a:hover {
+    text-decoration: underline;
+}
+
+
+.facility-container {
+box-shadow: 0px 0px 13px 2px rgba(241,99,33,0.52);
+border-radius: 45px 45px 45px 45px;
+position: relative;
+height: 500px;
+width: 35%;
+padding: 30px;
+top: 2em;
+}
+
+.history-container {
+box-shadow: 0px 0px 13px 2px rgba(241,99,33,0.52);
+border-radius: 45px 45px 45px 45px;
+position: relative;
+padding: 30px;
+bottom: 31em;
+left: 41%;
+text-align: center;
+
+}
+
+.footer {
+background-color: #f4f4f4; /* DBDBDB*/
+color: black;
+
+}
+
+.Text-main {
+    text-align:left; /* Align text to the left */
+    color: darkblue;
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 5px 10px; /* Add some spacing around the text */
+    display: inline-block; /* Ensure the box wraps tightly around the text */
+    font-size: 2.5rem;
+}
+
+
+.footer-box-1 {
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+}
+
+.footer-box-2 {
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+    width: 50%;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.footer-box-4 {
+    position: relative;
+    bottom: 60px;
+    margin-left: 0px;
+}
+
+.footer-box-4 a {
+    color: teal !important;  /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-box-4 a:hover {
+    color: black !important; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.icons-group {
+    display: block; /* Confine it to the size of the content */
+    text-align: center; /* Center align if needed */
+    margin: 0 auto; /* Center within the parent container if desired */
+    padding: 10px; /* Optional padding around the icons */
+    float: right;
+    position: relative;
+    right: 6em;
+    bottom: 3em;
+
+}
+
+.icons-group a {
+    display: inline-block; /* Ensure individual icons don't behave oddly */
+}
+
+
+
+
+
+
+
+/*Syllabus*/
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a::after {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:active .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:active .dropbtn {background-color: #3e8e41;}
+
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+
+
+
+.logo {
+position: relative;
+align-items: center;
+float: center;
+object-fit: fill;
+bottom: 5px;
+}
+
+.main-logo {
+background: url(../images/pic1.png);
+background-size: auto
+}
+
+
+.text-white{
+    color: white;
+}
+
+.container-fluid {
+    text-align: left;
+}
+
+.icon-class {
+    width: 1em; /* set the width of the icon */
+    height: 1em; /* set the height of the icon */
+    display: inline-block; /* make the icon inline */
+    background-image: url(../images/logo.png); /* set the image as the background */
+    background-size: contain; /* make the image fit within the icon */
+    background-position: center; /* center the image within the icon */
+    background-repeat: no-repeat; /* don't repeat the image */
+}
+
+.owl-carousel {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.owl-carousel .item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+my code
+*/
+
+.btn {
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 8px 6px -6px #555555;
+    -moz-box-shadow: 0 8px 6px -6px #555555;
+    box-shadow: 0 8px 6px -6px #555555;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    z-index: 99;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+.absolute-left {
+    position: absolute;
+    left:0px;
+    width: 45%;
+    height: 300px;
+}
+
+.service-item {
+    position: relative;
+    height: 350px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+.service-item .service-icon {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+    transform: rotate(-14deg);
+}
+
+.service-item .service-icon i {
+    transform: rotate(15deg);
+}
+
+.service-item a.btn {
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+}
+
+.service-item:hover a.btn {
+    bottom: -24px;
+    opacity: 1;
+}
+
+.price-carousel::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background: var(--primary);
+    border-radius: 8px 8px 50% 50%;
+    z-index: -1;
+}
+
+.price-carousel .owl-nav {
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next{
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: #FFFFFF;
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+@media (min-width: 576px) {
+    .team-item .row {
+        height: 350px;
+    }
+}
+
+.team-carousel .owl-nav {
+    position: absolute;
+    padding: 0 45px;
+    width: 100%;
+    height: 45px;
+    top: calc(50% - 22.5px);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-carousel .owl-nav .owl-prev,
+.team-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover {
+    background: var(--dark);
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/* syllabus page */
+
+.BoxIndex {
+    position: relative;
+    bottom: 400px;
+    text-transform: none;
+    box-sizing: none;
+    box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+
+
+.Text-Lab {
+    display: inline-block;
+    margin:40px;
+    margin-left: 25px;
+    padding: 3px;
+}
+
+.main-container {
+    display: flex; /* Use flexbox to align children side by side */
+    width: 100%;
+}
+
+/* Left container styles */
+.left-container {
+    width: 20%; /* Adjust width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Right container styles */
+.right-container {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-container .Text-Lab {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: -3px;
+    text-align: left; /* Example: Center the text */
+    position: relative;
+    bottom: 9px;
+}
+
+
+#sidebar {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Source Sans 3";
+    line-height: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color: rgb(0, 0, 0); /* Adjust text color for better contrast */
+    background-color: white;
+}
+
+
+#sidebar .sidebar-text {
+    cursor: pointer;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Push the arrow to the right */
+    padding: 10px 10px 0px 10px; /* Add some padding for a better look */
+    background-color: white; /* Optional: Add a background */
+    font-size: 25px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg); /* Downward arrow */
+    -webkit-transform: rotate(45deg); /* Compatibility */
+    margin-left: auto; /* Push it to the far right */
+}
+
+#sidebar ol {
+    padding: 2px;
+    margin: 0;
+    list-style: none;
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allows wrapping if the items exceed the container width */
+    gap: 10px; /* Optional: Add spacing between items */
+}
+
+#sidebar .lab-item {
+    display: block; /* Ensures each item takes the full row */
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: white;
+    color: black;
+    border-radius: 4px; /* Optional: Add rounded corners */
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 10px; /* Add spacing between items */
+    width: 100%; /* Optional: Make each item take the full container width */
+    font-weight: 300;
+    font-size: 20px;
+    font-family: "Source Sans 3";
+}
+
+
+#sidebar .lab-item span {
+color: #333;
+text-decoration: none;
+padding: 5px 2px;
+display: block;
+}
+
+#sidebar .lab-item:hover .lab-sheet-item {
+display: block;
+transition: .3s;
+}
+
+#sidebar .lab-item:hover span {
+text-decoration: underline;
+color: black;
+border-radius: 4px;
+padding: 4px;
+cursor: pointer;
+}
+
+#sidebar .lab-sheet-item {
+display: none;
+color: black;
+background-color: #ff6e30;
+font-weight: 300;
+font-size: 20px;
+font-family: "Source Sans 3";
+}
+
+#sidebar .lab-sheet-item:hover {
+display: none;
+color: black;
+
+text-decoration: underline;
+}
+
+/*Facility */
+
+
+.image-box {
+width: 45%;
+z-index: 2;
+}
+
+
+
+/* CSS code that's required: */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+    text-decoration: underline;
+    text-decoration-color: black;
+
+
+  }
+
+
+
+
+.top-container {
+    background-color: #000000;
+}
+
+
+
+
+
+/* Full-width navbar with green background */
+.NAVBAR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6e30;
+    color: white;
+    padding: 10px;
+}
+
+/* NAVBAR_BRAND styling */
+.NAVBAR_BRAND {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 1.3em;
+}
+
+.NAVBAR_BRAND .main-title {
+    font-size: 1.3em; /* Larger font size for Physics Lab */
+    font-weight: bold;
+}
+
+.NAVBAR_BRAND .sub-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Stretch to full width */
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-top: 5px;
+}
+
+.sub-title a {
+    text-decoration: none; /* Remove underline */
+    color: white;
+}
+
+.sub-title a:hover {
+    text-decoration: underline;
+}
+
+/* Remove list markers from all lists */
+.REST-NAVBAR {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Arrange list items horizontally */
+    gap: 15px; /* Add space between list items */
+}
+
+/* Styling for links inside REST-NAVBAR */
+.REST-NAVBAR a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    padding: 5px 10px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.REST-NAVBAR a:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Styling for links (anchor tags) inside the navbar */
+.NAVBAR a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    padding: 5px 10px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Add hover effect for links */
+.NAVBAR a:hover {
+    background-color: #ff6e30;
+    color: white;
+}
+
+.first-tag {
+    font-weight: bold; /* Make KMITL bold */
+}
+
+/* Styling for second-tag */
+.second-tag {
+    font-style: italic; /* Make SIIE italic */
+}
+
+
+.main-text {
+    margin: 1em auto; /* Centers horizontally with top margin */
+    display: block;   /* Ensures it behaves like a block element */
+    width: fit-content; /* Only as wide as the content */
+    border: 3px solid green;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero-slider {
+    max-height: 100vh; /* Set the maximum height to 50% of the viewport height */
+    overflow: hidden; /* Prevent content overflow */
+    display: flex; /* Ensure proper image alignment */
+    align-items: center; /* Center images vertically */
+    justify-content: center; /* Center images horizontally */
+}
+
+.hero-slider img {
+    object-fit: contain; /* Crop the image to fit the container without distortion */
+}
+
+.container-fluid.py-5.mb-5 {
+    padding: 2.5rem; /* Reduce top and bottom padding */
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+}
+
+.container.py-5 h5 {
+    position: relative;
+    bottom: 200px; /* Adjust based on the new hero slider height */
+}
+
+.container.py-5 .btn {
+    position: relative;
+    bottom: 200px; /* Keep the button aligned with the text */
+}
+
+
+
+
+
+
+
+
+
+
+/* INSTRUCTORS PAGE */
+
+.Instructors-text {
+    margin: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+    gap: 20px; /* Space between the boxes */
+    padding: 20px;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.instructor-box {
+    background-color: #ffffff;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    width: 250px; /* Fixed width for consistent layout */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align all content */
+    justify-content: center; /* Center-align vertically */
+}
+
+.image-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular image */
+    margin: 5px;
+    display: block;
+}
+
+
+.name-box {
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.position-box {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+/* INSTRUCTORS PAGE END */
+
+
+
+/* CONTACT PAGE START */
+
+.contact-header h5 {
+    color: #ff6e30; /* Stylish blue */
+    font-family: 'Roboto', sans-serif; /* Unique font */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ff6e30;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-header h1 {
+    font-family: Verdana, Tahoma, sans-serif; /* Classy serif font */
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.contact-info {
+    font-family: 'Arial', sans-serif; /* Standard and clear font */
+    font-size: 1.1rem;
+    color: #2c3e50;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.contact-info strong {
+    color: #ff6e30; /* Highlight important text */
+    font-weight: 600;
+}
+
+
+
+/* CONTACT PAGE END */
+
+
+.ImageConstruction {
+    position: relative;
+    max-width: 50vh;
+    margin: 0 auto; /* Center the image horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add some spacing around the image */
+    border: 5px solid #1e90ff; /* High-res good border */
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.ImageConstruction img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Match the container's rounding */
+}
+
+.ImageConstruction:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
