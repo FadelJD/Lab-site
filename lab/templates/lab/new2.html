@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Example</title>
+    <!-- Include HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'lab/lib/owlcarousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lab/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lab/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lab/css/style.css' %}?{{ cache_busting_value }}">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <!-- Javascript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lab/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lab/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lab/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lab/lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lab/lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lab/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="{% static 'lab/js/main.js' %}"></script>
+
+
+</head>
+
+
+<header>
+    <div class="top-container bg-dark text-white d-flex align-items-center justify-content-center">
+        KMITL
+    </div>
+    <nav>
+        <div class="NAVBAR">
+            <div class="NAVBAR_BRAND">
+                <div class="main-title">Physics Lab</div>
+                <div class="sub-title">
+                    <a href="youtube.com">KMITL</a>
+                    <a href="google.com">SIIE</a>
+                </div>
+            </div>
+            <div class = "REST-NAVBAR">
+                <li><a href="http://www.localhost:8000/">Home</a></li>
+                <li><a href="http://www.localhost:8000/syll">Syllabus</a></li>
+                <li><a href="http://www.localhost:8000/people">People</a></li>
+                <li><a href="http://www.localhost:8000/facility">Facility</a></li>
+                <li><a href="http://www.localhost:8000/contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="main-container">
+    <div class="left-container">
+        <div class="Text-Lab">
+            <h1>Lab docs</h1>
+        </div>      
+    <div id="sidebar">
+        <h3 class="sidebar-text">Labs (Spring) <i class="arrow down"></i></h3>
+        <div id="spring-content" style="display: none;">
+            <ol>
+                <li class="lab-item"><span>Lab 1</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/1_slides.pdf" target="_blank">Lab 1 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/1_sheet.pdf" target="_blank">Lab 1 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 2</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_03.pdf" target="_blank">Lab 2 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_3.pdf" target="_blank">Lab 2 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 3</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_04.pdf" target="_blank">Lab 3 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_3.pdf" target="_blank">Lab 3 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 4</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_04.pdf" target="_blank">Lab 4 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_04.pdf" target="_blank">Lab 4 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 5</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_05.pdf" target="_blank">Lab 5 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_05.pdf" target="_blank">Lab 5 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 6</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Kirchoff_s_law.pdf" target="_blank">Lab 6 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Kirchoff_s_law.pdf" target="_blank">Lab 6 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 7</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_07.pdf" target="_blank">Lab 7 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_07.pdf" target="_blank">Lab 7 (sheet)</a></li>
+                </ol>
+                </li>            
+                <li class="lab-item"><span>Lab 8</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_8.pdf" target="_blank">Lab 8 (slides)</a> </li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_8.pdf" target="_blank">Lab 8 (sheet)</a> </li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 9</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_9.pdf" target="_blank">Lab 9 (slides)</a> </li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_9.pdf" target="_blank">Lab 9 (sheet)</a> </li>
+                </ol>
+                </li>
+            </ol>	
+        </div>
+        </div>
+    
+    
+    <div id="sidebar">
+        <h3 class="sidebar-text">Labs (Fall) <i class="arrow down"></i></h3>
+        <div id="fall-content" style="display: none;">
+            <ol>
+                <li class="lab-item"><span>Lab 1</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/1_slides.pdf" target="_blank">Lab 1 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/1_sheet.pdf" target="_blank">Lab 1 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 2</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_03.pdf" target="_blank">Lab 2 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_3.pdf" target="_blank">Lab 2 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 3</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_04.pdf" target="_blank">Lab 3 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_3.pdf" target="_blank">Lab 3 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 4</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_04.pdf" target="_blank">Lab 4 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_04.pdf" target="_blank">Lab 4 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 5</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_05.pdf" target="_blank">Lab 5 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_05.pdf" target="_blank">Lab 5 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 6</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Kirchoff_s_law.pdf" target="_blank">Lab 6 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Kirchoff_s_law.pdf" target="_blank">Lab 6 (sheet)</a></li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 7</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_07.pdf" target="_blank">Lab 7 (slides)</a></li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/Lab_07.pdf" target="_blank">Lab 7 (sheet)</a></li>
+                </ol>
+                </li>            
+                <li class="lab-item"><span>Lab 8</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_8.pdf" target="_blank">Lab 8 (slides)</a> </li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_8.pdf" target="_blank">Lab 8 (sheet)</a> </li>
+                </ol>
+                </li>
+                <li class="lab-item"><span>Lab 9</span>
+                <ol>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_9.pdf" target="_blank">Lab 9 (slides)</a> </li>
+                    <li class="lab-sheet-item"><a href="/static/lab/pdfs/lab_9.pdf" target="_blank">Lab 9 (sheet)</a> </li>
+                </ol>
+                </li>
+            </ol>	
+            </div>
+            </div>
+    
+            
+    <div id="sidebar">
+        <h3 class="sidebar-text">Project</h3>
+        <ul>
+            <li style="text-align: left;"><a href="#">2022-Sep</a></li>
+            <li style="text-align: left;"><a href="#">2021-Aug</a></li>
+        </ul>
+    <h3 class="sidebar-text">References</h3>
+        <ul>
+            <li style="text-align: left;"><a href="https://physica.cloud/ajab/uploads/2018/10/Hugh-D.-Young-Roger-A.-Freedman-A.-Lewis-Ford-University-Physics-with-Modern-Physics-with-MasteringPhysics%C2%AE-13th-Edition-Addison-Wesley-2011.pdf"> ● Hugh D.Young and Roger A.Freedman, University Physics with modern physics</a></li>
+        </ul>		
+    </div>
+    </div>
+
+    <div class="right-container">
+        <div class="Text-Lab">
+            <h1>Syllabus</h1>
+        </div>
+
+        <p class="mb-5"> Course Syllabus 2022/2 – <br><br>
+            Physics II Lab<br><br>
+            
+            Course Title:<br>
+            PHYSICS Laboratory II (01006726/01006703)<br><br>
+            
+            Course Credit:<br>
+            PHYSICS Lab course [1 Credit or 20% from main lecture course]<br><br>
+            
+            Prerequisite:<br>
+            PHYSICS I<br><br>
+            
+            Level:<br>
+            Undergraduate<br><br>
+            
+            Semester/Year:<br>
+            Second/2022<br><br>
+            
+            Instructor:<br>
+            Mr. Ashan Kudabalage (Email: ashan.ku@kmitl.ac.th)<br><br>
+            
+            Teaching Assistance:<br>
+            Ms. Kunlapat Promboonsiri (64011453@kmitl.ac.th)<br>
+            Ms. Ploypathchara Sriwatcharakul (64011567@kmitl.ac.th)<br>
+            Mr. Atiwit Chomchalao (64110091@kmitl.ac.th)<br><br>
+            
+            Course Description<br>
+            ● To practice the appropriate usage of measuring devices and understand the experiments which are correspondence with the theory of physics II.<br><br>
+            
+            Course Outline:<br><br>
+            
+            9.1 Objective:<br><br>
+            To provide the students the knowledge of the use of scientific and electrical instruments.<br>
+            To improve the students’ understanding of the main idea of each experiment which is correspondence with the theory in Physics II subject.<br>
+            To improve the analytical skills of the students in solving a problems or finding solution to practical issues (Determine the problem, Research, Assumption/Hypothesis, Analyze, Finalize the method and Summarize the result).<br><br>
+          
+9.2 Tentative Lab schedule:</p>
+        <table class="table table-striped" style="text-align: center;">
+          <thead>
+            <tr>
+              <th>Topic</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Introduction to Physic laboratory II</td>
+            </tr>
+            <tr>
+              <td>2. Introduction to basic electronic devices and components I</td>
+            </tr>
+                                <tr>
+              <td>3. Introduction to basic electronic devices and components II</td>
+            </tr>
+            <tr>
+              <td>4. I-V characteristics & resistor applications</td>
+            </tr>
+                                <tr>
+              <td>5. Capacitors and its applications</td>
+            </tr>
+            <tr>
+              <td>6. Kirchhoff’s Circuit Laws</td>
+            </tr>
+                                <tr>
+              <td>7. Semiconductor devices</td>
+            </tr>
+            <tr>
+              <td>8. The War of Currents: Why Use Alternating Current (AC)</td>
+            </tr>
+                                <tr>
+              <td>9. Capacitors & Inductors (RC & RL circuits)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br>
+
+        <p class="mb-5">10. Procedure of teaching
+            <br>● Describe the theory and the detail of each experiment
+            <br>● Demonstrate an example setup for student understanding
+            <br>● Conduct experiments related to the theory
+            <br>● Lab assignment explanation at the beginning of the lab class (related to the previous lab experiment) 
+          </p>
+          <p class="mb-5">11. Lab Score distribution (Tentative) 
+            <br>● Lab Assignments 40%
+            <br>● Quiz 10%
+            <br>● Midterm exam 20%
+            <br>● Final exam/ Project 30%
+          </p>
+
+          <p class="mb-5">
+            12. Reference: <br>
+            ● Hugh D.Young and Roger A.Freedman, University Physics with modern physics, 14th Ed., PEARSON Education, USA, 2016. <br>
+            General usage policies of the Electronics Lab (If applicable):
+            <br>● Any kind of Food or Drinks are not allowed at any time in the lab premises.
+            <br>● No Furniture or Teaching Equipment is to be removed from this lab room.
+            <br>● All the Furniture and Equipment here are for teaching / learning use only.
+            <br>● Return back the equipment or the furniture in the proper position after using it.
+            <br>● Vandalism and the writing on the computer table is prohibited.
+            <br>● Playing or dancing or any kind of disruptive behavior inside the lab is prohibited.
+            <br>● Students are not allowed to use the lab room for the personnel use such as party or any kind of personnel gatherings. However, students are allowed to use the lab for the experiment after the class time with permission by the lab supervisor.
+            <br>● Please always lock the door and turn off the lights and air-conditioning after the class.
+            <br>● Please make sure to inform to the lab supervisor any kind of damage caused during the experiments.
+            <br>● Keep clean the environment around the lab premises.
+          </p>
+
+      </div>
+    </div>
+
+</body>
+
+
+
+
+
+<footer>
+
+
+<!-- Footer Start -->
+<div class="container-fluid text-dark mt-5 py-5 footer">
+    <div class="Text-main">
+        <p>Lab @ KMITL</p>
+    </div>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6 footer-box-1">
+                <p class="mb-4"><strong>Office Hours:</strong><br>
+                    Room no. 504, HM Building, Faculty of Engineering, KMITL, Bangkok, Thailand.
+                </p>
+                <p>ECC Building, KMITL, Lat Krabang, Bangkok, Thailand</p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-box-2">
+                <p class="mb-4"><strong>Web Accessibility</strong><br>
+                    <p>This is generic text detailing about the work done at the Physics Lab at KMITL.</p>
+                    <p>This is generic text detailing about the work done at the Physics Lab at KMITL.</p>
+                    <p class="mb-4"><strong>Web Accessibility</strong><br>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-box-4">
+                <p class="mb-4" style="font-size: 25px; align-items: left; position: relative; bottom: 20px;"><strong>Related Links</strong></p>
+                <div class="d-flex flex-column">
+                    <a class="text-dark mb-2 mt-2" href="https://reg.kmitl.ac.th" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>Registration website
+                    </a>
+                    <a class="text-dark mb-2 mt-2" href="https://www.eng.kmitl.ac.th/siie/" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>SIIE
+                    </a>
+                    <a class="text-dark mb-2 mt-2" href="https://rai.kmitl.ac.th/" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>Robotics & AI (RAI)
+                    </a>
+                    <a class="text-dark mb-0 mt-2" href="https://kdmc.kmitl.ac.th/" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>KDMC
+                    </a>
+                </div>                
+            </div>            
+        </div>
+    </div>
+    <div class="icons-group d-inline-block">
+        <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f logo"></i></a>
+        <a class="btn btn-lg btn-danger btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-youtube logo"></i></a>
+        <a class="btn btn-lg btn-success btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-line logo"></i></a>
+        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in logo"></i></a>
+    </div>
+</div>
+<div class="container-fluid border-top border-secondary py-4" style="background-color: #ff6e30;">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-12 text-center">
+                <p class="mb-md-0" style="color: black;">&copy; Lab @ KMITL. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</footer>
+
+
+
+</html>

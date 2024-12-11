@@ -1,0 +1,20 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+env/
+venv/
+
+# Ignore database
+db.sqlite3
+
+# Ignore staticfiles directory (auto-generated)
+staticfiles/
+
+# Ignore media/uploads (optional, unless required in the repo)
+media/
+
+# System files
+*.log
+*.swp

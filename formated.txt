@@ -1,0 +1,84 @@
+Formatting file
+
+keywords:
+
+py manage.py runserver
+
+py manage.py runserver --insecure
+
+py manage.py makemigrations
+
+py manage.py migrate
+
+py manage.py createsuperuser
+
+py manage.py test
+
+Home    Syllabus    Instructors    Facility/Equipment    Research
+
+
+                        <a href="localhost:8000/" class="nav-item nav-link active">Home</a>
+                        <a href="localhost:8000/syll" class="nav-item nav-link">Syllabus</a>
+                        <a href="localhost:8000/instructors" class="nav-item nav-link">instructors</a>
+                        <a href="localhost:8000/facility" class="nav-item nav-link">facility</a>
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center topbar-left">
+                        <a class="text-white pe-3" href="http://reg.kmitl.ac.th">KMITL</a>
+                        <span class="text-white">|</span>        
+                        <a class="text-white px-3" href="http://ieng.kmitl.ac.th">SIIE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End --> 
+
+
+
+
+
+Text that was deleted from UPCOMING EVENTS section
+
+        <ul>
+          <li>
+            <strong>KMITL Physics Lab Seminar Series</strong><br>
+            Date: Friday, March 10th, 2023 at 2:00pm<br>
+            Location: Physics Lab Conference Room<br>
+            Speaker: Dr. Supakorn Sirisuwan, Mahidol University<br>
+            Title: "The Role of Magnetism in Nanoscale Devices"
+          </li>
+          <li>
+            <strong>International Symposium on Advanced Materials and Nanotechnology</strong><br>
+            Date: Monday, April 17th - Wednesday, April 19th, 2023<br>
+            Location: KMITL Convention Center<br>
+            Keynote Speaker: Dr. Marie-Claire Hermant, Institut Néel, France<br>
+            Title: "Exploring Quantum Materials with Scanning Tunneling Microscopy"
+          </li>
+          <li>
+            <strong>KMITL Physics Lab Open House</strong><br>
+            Date: Saturday, June 3rd, 2023 from 9:00am-3:00pm<br>
+            Location: Physics Lab<br>
+            Event Details: Join us for a day of interactive physics experiments and demonstrations. Meet our faculty and students and learn more about the exciting research happening at the KMITL Physics Lab.
+          </li>
+          <li>
+            <strong>Workshop on Experimental Techniques in Condensed Matter Physics</strong><br>
+            Date: Monday, August 21st - Friday, August 25th, 2023<br>
+            Location: Physics Lab<br>
+            Event Details: This week-long workshop will cover experimental techniques used in condensed matter physics, including spectroscopy, microscopy, and nanofabrication. Participants will have the opportunity to attend lectures, hands-on lab sessions, and network with experts in the field.
+          </li>
+        </ul>
+
+
+
+TEXT DELETED FROM FACILITIY
+        <ol>
+          <li>Cleanroom: Our ISO Class 5 cleanroom is equipped with advanced nanofabrication tools, including an electron beam lithography system, a thermal evaporator, and a reactive ion etching system.</li>
+          <li>Spectroscopy and microscopy: We have a variety of high-resolution spectroscopy and microscopy instruments, including a scanning tunneling microscope, a confocal microscope, and a Fourier transform infrared spectrometer.</li>
+        </ol>
+        <p>Click <a href="#">here</a> to learn more about our facilities.</p>

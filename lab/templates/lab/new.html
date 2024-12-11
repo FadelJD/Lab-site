@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Example</title>
+    <!-- Include HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'lab/lib/owlcarousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lab/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lab/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lab/css/style.css' %}?{{ cache_busting_value }}">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <!-- Javascript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lab/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lab/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lab/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lab/lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lab/lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lab/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+    <script src="{% static 'lab/js/main.js' %}?{{ cache_busting_value }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'lab/js/main.js' %}"></script>
+
+
+</head>
+
+
+<header>
+    <div class="top-container bg-dark text-white d-flex align-items-center justify-content-center">
+        KMITL
+    </div>
+    <nav>
+        <div class="NAVBAR">
+            <div class="NAVBAR_BRAND">
+                <div class="main-title">Physics Lab</div>
+                <div class="sub-title">
+                    <a href="youtube.com">KMITL</a>
+                    <a href="google.com">SIIE</a>
+                </div>
+            </div>
+            <div class = "REST-NAVBAR">
+                <li><a href="http://www.localhost:8000/">Home</a></li>
+                <li><a href="http://www.localhost:8000/syll">Syllabus</a></li>
+                <li><a href="http://www.localhost:8000/people">People</a></li>
+                <li><a href="http://www.localhost:8000/facility">Facility</a></li>
+                <li><a href="http://www.localhost:8000/contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<body>
+
+    <h1 class="main-text">Welcome to the Physics Laboratory</h1>
+
+    <!-- Hero Start -->
+<div class="container-fluid py-5 mb-2">
+    <!-- Hero Slider Start -->
+    <div class="owl-carousel owl-theme hero-slider">
+      <div><img src="{% static 'images/Lab_1.jpg' %}" alt="Image 1"></div>
+      <div><img src="{% static 'images/Lab_2.jpg' %}" alt="Image 2"></div>
+      <div><img src="{% static 'images/Lab_3.jpg' %}" alt="Image 3"></div>
+      <div><img src="{% static 'images/10.jpg' %}" alt="Image 4"></div>
+    </div>
+    
+    <!-- Hero Slider End -->
+    <div class="container py-5">
+      <h5 class="d-inline-block text-primary text-capitalize border-bottom border-5" style="position: relative; bottom: 400px; z-index: 5; color: #ff6e30 !important;">Welcome To Physics Lab</h5>
+      <div class="pt-2">
+        <a href="http://www.localhost:8000/facility" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2"  style="position: relative; bottom: 400px; z-index: 5;">Reservation</a>
+      </div>
+    </div>
+  </div>
+  <!-- Hero End -->
+
+  <div class="container py-4">
+    <div class="row gx-4"> <!-- gx-4 adds horizontal gap between columns -->
+        <!-- About Us Section -->
+        <div class="col-md-4 col-lg-3 about-container">
+            <h3 class="text-primary">About Us</h3>
+            <div class="textbody mt-4">
+                <p>This is the official website for the Physics Laboratory at KMITL.
+
+                    The Physics Laboratory was established in 2016 and serves as a platform providing facilities and administrative support for faculty research that transcends traditional departmental boundaries. Examples include collaborations between physics and engineering or physics and agricultural sciences.
+                    
+                    The concept of an independent laboratory is a distinctive feature of KMITL, fostering interdisciplinary collaboration and enabling world-class research and learning opportunities.</p>
+            </div>
+            <div class="link mt-4">
+                <a href="https://www.reg.kmitl.ac.th">More About Campus</a>
+            </div>
+        </div>
+
+        <!-- Research Section -->
+        <div class="col-md-8 col-lg-6 research-container">
+            <h2 class="text-primary">Research</h2>
+            <div class="research-body mt-4">
+                <div class="link mb-4">
+                    <a href="https://www.reg.kmitl.ac.th">Refer Link</a>
+                    <p>Date: 24th October, 2024</p>
+                </div>
+                <div class="textbody">
+                    <p>Recent advancements in robotic arm technology have paved the way for unprecedented precision in manipulating microscopic structures. The Physics Laboratory collaborates with the Engineering Department to leverage robotic arms equipped with transistor-based sensors, enabling breakthroughs in nanotechnology and materials science. These tools are being used to analyze and innovate at the molecular level, setting new standards in laboratory research.</p>
+                </div>
+                <div class="link mt-4">
+                    <a href="https://www.reg.kmitl.ac.th">Referral</a>
+                    <p>Date: 22nd January, 2024</p>
+                </div>
+                <div class="textbody mt-4">
+                    <p>Our AI-integrated robotic systems are now being used to automate complex experiments that require high precision and minimal error margins. Through machine learning algorithms and innovative hardware, these robotic arms have significantly enhanced research capabilities. Projects include the study of microscopic material properties, real-time monitoring of quantum effects, and automation of repetitive tasks, allowing researchers to focus on critical analysis and interpretation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-4">
+    <!-- About Us Section -->
+    <div class="col-md-4 col-lg-3 events-container">
+        <h2 class="text-primary">Upcoming Events</h2>
+        <div class="textbody mt-4">
+            <p>The Advanced Drone Course is a comprehensive program designed to introduce participants to the fundamentals of drone technology. The course will explore how drones operate and their expanding role in industries worldwide, from agriculture and logistics to surveillance and scientific research.
+
+                For volunteers, this program presents a unique opportunity to gain valuable real-world experience, contribute to meaningful projects, and earn volunteer hours towards scholarships. It’s also a chance to enhance technical skills and build knowledge in a rapidly growing field.
+                
+                Click the link below to learn more and stay updated on the announcement of the course date.</p>
+        </div>
+        <div class="link mt-4">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-o0N1Hdqg1h3rye1nX5xZuVhR120bYncAW4t2IPEFGvhOug/closedform">Register Here</a>
+        </div>
+    </div>
+</div>
+  
+
+</body>
+
+
+
+
+
+<footer>
+
+
+<!-- Footer Start -->
+<div class="container-fluid text-dark mt-5 py-5 footer">
+    <div class="Text-main">
+        <p>Lab @ KMITL</p>
+    </div>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6 footer-box-1">
+                <p class="mb-4"><strong>Office Hours:</strong><br>
+                    Room no. 504, HM Building, Faculty of Engineering, KMITL, Bangkok, Thailand.
+                </p>
+                <p>ECC Building, KMITL, Lat Krabang, Bangkok, Thailand</p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-box-2">
+                <p class="mb-4"><strong>Web Accessibility</strong><br>
+                    <p>This is generic text detailing about the work done at the Physics Lab at KMITL.</p>
+                    <p>This is generic text detailing about the work done at the Physics Lab at KMITL.</p>
+                    <p class="mb-4"><strong>Web Accessibility</strong><br>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-box-4">
+                <p class="mb-4" style="font-size: 25px; align-items: left; position: relative; bottom: 20px;"><strong>Related Links</strong></p>
+                <div class="d-flex flex-column">
+                    <a class="text-dark mb-2 mt-2" href="https://reg.kmitl.ac.th" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>Registration website
+                    </a>
+                    <a class="text-dark mb-2 mt-2" href="https://www.eng.kmitl.ac.th/siie/" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>SIIE
+                    </a>
+                    <a class="text-dark mb-2 mt-2" href="https://rai.kmitl.ac.th/" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>Robotics & AI (RAI)
+                    </a>
+                    <a class="text-dark mb-0 mt-2" href="https://kdmc.kmitl.ac.th/" target="_blank">
+                        <i class="fa fa-angle-right me-2"></i>KDMC
+                    </a>
+                </div>                
+            </div>            
+        </div>
+    </div>
+    <div class="icons-group d-inline-block">
+        <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f logo"></i></a>
+        <a class="btn btn-lg btn-danger btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-youtube logo"></i></a>
+        <a class="btn btn-lg btn-success btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-line logo"></i></a>
+        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in logo"></i></a>
+    </div>
+</div>
+<div class="container-fluid border-top border-secondary py-4" style="background-color: #ff6e30;">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-12 text-center">
+                <p class="mb-md-0" style="color: black;">&copy; Lab @ KMITL. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</footer>
+
+
+
+</html>
