@@ -98,7 +98,7 @@ DATABASES = {
         'NAME': 'MYBLOG',
         'USER': 'admin',
         'PASSWORD': 'NewAWS32',
-        'HOST': 'my-mysql-db.c1800sswy12x.ap-southeast-2.rds.amazonaws.com',
+        'HOST': 'mysqldb.c1800sswy12x.ap-southeast-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
