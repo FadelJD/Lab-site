@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(k(t^ydt9@=n41$dy+fxael2+1n_h*ea=k+s3kzb9i#8bk#(0&
 DEBUG = os.environ.get("DJANGO_DEBUG", "false").lower() == "false"
 
 ALLOWED_HOSTS = ['lab-site-98x2.onrender.com', '127.0.0.1', 'localhost', 'www.localhost']
-
+#ALLOWED_HOSTS = ['localhost']
 
 # Application definition
 
@@ -95,10 +95,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'MYBLOG',
+        'NAME': 'lab',
         'USER': 'admin',
-        'PASSWORD': 'NewAWS32',
-        'HOST': 'mysqldb.c1800sswy12x.ap-southeast-2.rds.amazonaws.com',
+        'PASSWORD': 'Endor6.1',
+        'HOST': 'dbcloud.cnmouuog01ey.ap-southeast-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
